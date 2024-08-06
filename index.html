@@ -845,7 +845,7 @@ const util = {
                     commentElement.innerHTML = `
                         <div class="card bg-light border">
                             <div class="card-body">
-                                <h5 class="card-title" style="color: green;">${comment.name}/-<span class="card-subtitle mb-2" style="color: white;">${comment.presence === '1' ? 'Hadir' : 'Berhalangan'}</span></h5>
+                                <h5 class="card-title" style="color: green;">${comment.name}/-<span class="card-subtitle mb-2" style="color: black;">${comment.presence === '1' ? 'Hadir' : 'Berhalangan'}</span></h5>
                                 <p class="card-text" style="color: black;">${comment.comment}</p>
                                 <button class="btn btn-sm btn-outline-primary" onclick="util.comment.reply(this)" data-uuid="${key}">Reply</button>
                                 <span class="badge bg-secondary" onclick="util.comment.toggleReplies('${key}')">Replies (${repliesCount})</span>
